@@ -1,0 +1,181 @@
+body{
+  color:#352d39;
+  background-color: #fffcf9;
+  text-align: left;
+  font-size: 22px;
+  font-family: 'Monteserrat',sans-serif;
+  margin: 0px auto;
+}
+
+/* .barra {
+    height: 50px;
+    background-color: #e031e7;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    color: aliceblue;
+} */
+
+h1,h2{
+  color:#ff6978;
+}
+
+h1{
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  clear:both;
+}
+
+img {
+  border-radius: 20px;
+  /* display: flex;
+  margin: 0 auto; */
+  float: left;
+  margin:0px 20px 20px 0px;
+}
+
+div#navbar{
+  background-color: #0e4ea3;
+  margin: 0px ;
+  color:white;
+  width: 100%;
+  text-align: center;
+  padding: 5px 20px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
+div#navbar:hover{
+  text-decoration: underline;
+}
+
+div#contenitore-supremo{
+  /* background: #6D435A; */
+  max-width: 800px;
+  margin: 120px auto 0px;
+  color:black;
+}
+
+div#testata:hover{
+  box-shadow: 0px 0px 0px;
+  background-image: linear-gradient(to top right, #6d435a,#bcf1eb);
+  color: white;
+}
+
+div#testata{
+  background-color: rgb(163, 230, 230);
+  background-image: linear-gradient(to right blue,red);
+  /* background-image: radial-gradient(blue,red); */
+  /* margin: 10px 100px;      */
+  /* alto-basso, destra-sinistro */
+
+  /* margin:10px 100px 50px 100px  */
+  /* alto,destra,basso,sinistra,in senso orario */
+  border: 2px solid #6d435a;
+  /* border:10px solid #e86db1;
+  border-bottom-color: #af1525; */
+  border-radius: 20px;
+  margin:20px 20px ;
+  padding: 25px;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  box-shadow: 20px 20px 20px black; /* destra,basso */
+  /* opacity: 0.5; */
+  /* position: fixed;
+  /* top:0px; */
+  /* left:0px; */
+  
+  
+ 
+}
+div#piedipagina{
+  background:#352d39 ;
+  margin-top: 50px;
+  color:white;
+  border: 2px solid #0e4ea3;
+   padding: 25px;
+}
+
+/* div#testata{
+  background:#B1EDE8;
+  width: 400px;
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+} */
+
+p.dentro-testata{
+  font-weight: bold;
+}
+
+img.immagine-natura{
+  width: 40%;
+  min-width: 200px;
+  float: left;
+   margin:0px 20px 20px 0px
+}
+
+p.dentro-piedipagina{
+  font-style: italic;
+}
+
+ul.spesa li:first-child{
+  font-weight: bold;
+  color: blue;
+}
+ul.spesa li:last-child{
+  font-weight: bold;
+  color: red;
+}
+ul.spesa li:nth-child(4){
+  font-weight: bold;
+  color: rgb(21, 255, 0);
+}
+/* ul.spesa li:nth-child(even){ /* even => pari, odd => dispari,
+  font-weight: bold;
+  color: rgb(21, 255, 0);
+} */
+
+/*ADATTAMENTIPER SCHERMI SMARTPHONE */
+
+@media screen and (min-width: 350px) and (max-width: 800px){
+  body{
+    background: rgb(187, 228, 234);
+  }
+  div#navbar{
+    display: none;
+  }
+
+  div#contenitore-supremo{
+  /* background: #6D435A; */
+ 
+  margin: 0px auto 0px;
+ 
+}
+
+div#piedipagina{
+  margin:0px 20px;
+}
+div#contenuto{
+  margin:0px 20px;
+}
+img {
+  border-radius: 20px;
+  /* display: flex;
+  margin: 0 auto; */
+ 
+  margin:0px 20px 20px 0px;
+}
+
+img.immagine-natura{
+  width: 100%;
+  /* float: none; */
+  /* margin:20px 20px 20px 0px */
+}
+}
